@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev2": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +13,7 @@
     "@next/third-parties": "^15.0.3",
     "@nextui-org/react": "^2.4.8",
     "ahooks": "^3.8.1",
+    "cheerio": "^1.0.0",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
     "framer-motion": "^11.11.17",

@@ -5,6 +5,7 @@
  * @LastEditTime: 2024-05-13 16:36:43
  * @Description: 入口页面
  */
+
 import HotContainer from '@/components/HotContainer'; // 热榜卡片
 
 export default function Home() {
