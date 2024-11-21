@@ -136,6 +136,7 @@ export const getWereadID = (bookId: string) => {
     strSub += finalStr.substring(0, 3);
     return strSub;
   } catch (error) {
+    console.log('error', error)
     console.error('处理微信读书 ID 时出现错误：' + error);
     return null;
   }

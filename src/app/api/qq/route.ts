@@ -41,6 +41,7 @@ export async function GET() {
     }
     return NextResponse.json(responseSuccess());
   } catch (error) {
+    console.log('error', error)
     return NextResponse.json(responseError);
   }
 }
