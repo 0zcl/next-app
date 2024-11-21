@@ -33,7 +33,7 @@ export default function Header() {
         {/* 模式切换 */}
         <ThemeMode />
         {/* Github */}
-        <Tooltip showArrow content="Github" placement="bottom">
+        <Tooltip showArrow content="Github" placement="bottom" color="primary">
           <a
             href={`https://github.com/${process.env.GITHUB_USERNAME}/${process.env.PROJECT_NAME}`}
             target="_blank"

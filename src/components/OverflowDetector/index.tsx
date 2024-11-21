@@ -49,7 +49,7 @@ const OverflowDetector = ({ children, record, type }: OverflowDetectorProps) => 
         data-umami-event={type}
         data-umami-event-title={record.title}
         data-umami-event-url={record.url}
-        data-umami-event-mobileUrl={record.mobileUrl}
+        data-umami-event-mobileurl={record.mobileUrl}
       >
         {children}
       </div>
