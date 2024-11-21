@@ -47,4 +47,4 @@ export async function GET() {
 }
 
 // 数据过期时间
-export const revalidate = Number(process.env.NEXT_PUBLIC_CACHE_TIME);
+// export const revalidate = Number(process.env.NEXT_PUBLIC_CACHE_TIME);
