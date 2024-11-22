@@ -81,8 +81,6 @@ export default function RootLayout({
       <GoogleUtilities />
       {/* umami - 站点统计分析 */}
       <UmamiAnalytics />
-      {/* Vercel 分析 */}
-      <Analytics />
       <body className={inter.className}>
         <NextUIProvider>
           {/* 主体内容 */}
@@ -90,8 +88,12 @@ export default function RootLayout({
             {/* 全局 Loading */}
             <FullLoading />
             {/* 头部布局 */}
-            <Header />
-            <main>{children}</main>
+            <Header />123
+            <main>
+              {children}
+              {/* Vercel 分析 */}
+              <Analytics />
+            </main>
             {/* 底部版权 */}
             <Footer />
           </ThemeProvider>
