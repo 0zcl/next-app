@@ -16,6 +16,7 @@ import UmamiAnalytics from '@/components/Analytics/UmamiAnalytics'; // Umami Ana
 import Footer from '@/components/Footer'; // 底部版权
 import FullLoading from '@/components/FullLoading'; // 全局 Loading
 import Header from '@/components/Header'; // 头部布局
+import { Analytics } from '@vercel/analytics/next'
 
 import type { HotListConfig } from '@/utils/types';
 
@@ -89,6 +90,7 @@ export default function RootLayout({
             {/* 头部布局 */}
             <Header />
             <main>{children}</main>
+            <Analytics />
             {/* 底部版权 */}
             <Footer />
           </ThemeProvider>
