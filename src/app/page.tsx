@@ -5,10 +5,18 @@
  * @LastEditTime: 2024-05-13 16:36:43
  * @Description: 入口页面
  */
-
+'use client'
 import HotContainer from '@/components/HotContainer'; // 热榜卡片
+import { useEffect } from 'react';
+import { track } from '@vercel/analytics'
 
 export default function Home() {
+
+  useEffect(() => {
+    console.log('useEffect')
+    track('pageView')
+  }, [])
+
   return (
     <div
       className="grid px-4 md:px-12 lg:px-20 gap-5 py-5"
