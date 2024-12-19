@@ -9,12 +9,14 @@
 import HotContainer from '@/components/HotContainer'; // 热榜卡片
 import { useEffect } from 'react';
 import { track } from '@vercel/analytics'
+// import { sendGAEvent } from '@next/third-parties/google'
 
 export default function Home() {
 
   useEffect(() => {
     console.log('useEffect')
     track('pageView')
+    // sendGAEvent('event', )
   }, [])
 
   return (
